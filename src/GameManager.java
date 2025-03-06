@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +17,7 @@ public class GameManager {
         gameState = State.MENU; 
         loadImages();
     }
-
+    //comming soon
     private void loadImages() {
         try {
             heartImage = ImageIO.read(new File("assets/heart.png"));
@@ -43,10 +42,10 @@ public class GameManager {
     public boolean isGameOver() {
         return gameState == State.GAMEOVER;
     }
-
-    public void drawHUD(Graphics g, int health) {
+   // comming soon
+    /**public void drawHUD(Graphics g, int health) {
         for (int i = 0; i < health; i++) {
             g.drawImage(heartImage, 10 + i * 30, 10, 20, 20, null);
         }
-    }
+    }**/
 }

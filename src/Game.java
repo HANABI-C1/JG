@@ -94,7 +94,7 @@ public class Game extends JPanel implements Runnable {
             g.drawString("GAME OVER", getWidth() / 2 - 150, getHeight() / 2);
         }
 
-        gameManager.drawHUD(g, player.getHealth());
+        //gameManager.drawHUD(g, player.getHealth());
     }
 
     public static void main(String[] args) {
@@ -105,6 +105,9 @@ public class Game extends JPanel implements Runnable {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+        //fix window size
+        frame.setResizable(false);
+        
         game.start();
     }
 }

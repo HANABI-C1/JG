@@ -17,8 +17,8 @@ public class Player {
     private BufferedImage run1, run2, jump, attack;
     private int animationFrame = 0;
 
-    private final int GRAVITY = 2;
-    private final int JUMP_STRENGTH = 30;
+    private final int GRAVITY = 1;
+    private final int JUMP_STRENGTH = 35;
     private final int ATTACK_DURATION = 10;
 
     public Player(int startX, int groundY) {
@@ -96,7 +96,7 @@ public class Player {
 
    
     public Rectangle getHitbox() {
-        return new Rectangle(x, y, width, height);
+        return new Rectangle(x-50, y, width, height);
     }
 
     public boolean isAttacking() {

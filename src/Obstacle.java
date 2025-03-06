@@ -55,7 +55,7 @@ public class Obstacle {
     }
 
     public Rectangle getHitbox() {
-        return new Rectangle(x, y, width, height);
+        return new Rectangle(x+50, y, width, height);
     }
 
     public boolean isCollidingWith(Player player) {
