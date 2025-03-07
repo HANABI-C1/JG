@@ -96,7 +96,7 @@ public class Player {
 
    
     public Rectangle getHitbox() {
-        return new Rectangle(x-50, y, width, height);
+        return new Rectangle(x, y, width-50, height);
     }
 
     public boolean isAttacking() {
